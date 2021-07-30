@@ -1,0 +1,82 @@
+.loginPerson{
+    color:white;
+    float: right;
+}
+
+.Login{
+    margin-right: 2px;
+    color:white
+}
+
+.loginForm{
+    margin: 0 auto;
+    
+    margin-top: 2%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: black;
+    color: white;
+    border: none;
+  }
+  .openNv{
+    font-size:18px;cursor:pointer;color:white
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav a {font-size: 18px;}
+  }
+
+.product-cart{
+    width: 18rem;
+    margin: 0 auto;
+}
+.updateForm{
+    margin: 0 auto;
+    
+    margin-top: 2%;
+
+}
+#mySidenav .Login{
+  color:white
+}
+.loginForm button{
+    width:100%
+
+}
+.error{
+    margin-left: 5px;
+    font-size: 13px;
+    color: red;
+  }

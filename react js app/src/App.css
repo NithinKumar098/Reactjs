@@ -1,0 +1,226 @@
+body { 
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-content {
+  text-align: center;
+}
+
+.list-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.list-items .card {
+  width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+  .list-items .card {
+    width: 64%;
+  }
+}
+
+.form-control {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  margin: auto;
+  width: 30%;
+}
+
+.not-found-error {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-control {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+  }
+}
+
+.to-do-form-control {
+  /* padding: 30px; */
+  margin: auto;
+  width: 50%;
+}
+
+.todo-form {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .to-do-form-control {
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+  }
+}
+
+.cards {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+  background: linear-gradient(135deg, rgb(34,193,195) 0%, rgb(252, 252, 251) 100%);
+	border-radius: 3px;
+	padding: 30px;
+	margin: 10px;
+	text-align: center;
+	width: 20%;
+	max-width: 100%;
+}
+
+.card img {
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	width: 75px;
+}
+
+.card small {
+	color: rgb(0, 0, 0);
+	display: block;
+}
+
+.card button {
+	background-color: rgba(253,187,45,1);
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: rgb(255, 255, 255);
+	padding: 10px 25px;
+	margin-top: 25px;
+  cursor: pointer;
+}
+
+.card.active button {
+	background-color: #748DFF;
+	border: 0;
+	box-shadow: 0px 2px 5px rgba(116, 141, 255, 0.7);
+	color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: linear-gradient(135deg, rgb(34,193,195) 0%, rgb(252, 252, 251) 100%);
+    border-radius: 3px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.user-form-control {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  margin: auto;
+  width: 45%;
+}
+
+.profile-form {
+  padding: 0 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .user-form-control {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+  }
+
+  .profile-form {
+    padding: 0;
+  }
+}
+
+.update-button {
+  background-color: rgb(63, 43, 245);
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: rgb(255, 255, 255);
+	padding: 10px 25px;
+  cursor: pointer;
+  margin: 1rem 1rem 0 0;
+}
+
+.update-button:hover {
+  background-color: rgb(104, 88, 252);
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: rgb(255, 255, 255);
+	padding: 10px 25px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: rgb(252, 0, 0);
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: rgb(255, 255, 255);
+	padding: 10px 25px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.delete-button:hover {
+  background-color: rgb(104, 88, 252);
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: rgb(255, 255, 255);
+	padding: 10px 25px;
+  cursor: pointer;
+}
+
+.to-do-list-control {
+  margin: auto;
+  width: 50%;
+}
+
+.todo-list-item {
+  border: 1px solid rgb(190, 187, 187);
+  border-radius: 5px;
+  background-color: rgba(253,187,45,1);
+  padding: 1px 10px;
+  margin: 0.1rem;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-list-item:hover {
+  /* border: 1px solid rgb(255, 255, 255); */
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(250, 212, 132);
+  padding: 1px 10px;
+  margin: 0.1rem;
+  color: rgb(56, 55, 55);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.markedDone {
+  text-decoration: line-through;
+  color: brown;
+}

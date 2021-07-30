@@ -1,0 +1,55 @@
+.sidepanel  {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: lightskyblue;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: width 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidepanel {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #cccc00 0%, #33ccff 100%);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: width 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  }
+}
+
+#menuPanel {
+  transition-timing-function: ease-out;
+}
+
+.sidepanel a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #696767;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+}

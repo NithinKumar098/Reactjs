@@ -1,0 +1,39 @@
+.control {
+  margin: 1rem 0;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.control label,
+.control input {
+  display: block;
+}
+
+.control label {
+  font-weight: bold;
+  flex: 1;
+  color: #050505;
+}
+
+.control input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid rgb(150, 147, 147);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.control.invalid input {
+  border-color: red;
+  background: #fac1c1;
+  color: red;
+}
+
+.errorText {
+  color: red;
+  font-size: 12px;
+  margin-top: -3px;
+}

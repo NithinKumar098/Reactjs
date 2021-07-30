@@ -1,0 +1,25 @@
+.header {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(34,193,195);
+  background: grey;
+  padding: 0 20px;
+  margin: 0 0 2rem 0;
+  height: 50px;
+}
+
+.header a {
+  margin: 0 1rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: rgb(5, 99, 94);
+  padding-bottom: 0.25rem;
+  /* border-bottom: 4px solid rgb(5, 99, 94); */
+}

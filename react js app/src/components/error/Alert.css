@@ -1,0 +1,9 @@
+.alert-card {
+    margin: 2rem 24rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    background-color: rgb(247, 155, 155);
+    color: red;
+    border-radius: 5px;
+}
